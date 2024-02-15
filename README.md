@@ -1,4 +1,5 @@
 Documentation for Breast Cancer Prediction:
+
 In the given dataset of 570 rows and 30 columns has no null values
 Converted categorical labels Malignant(M) to 1 and Begnin to 0
 dropped the id columns as it has no contribution in final perdiction
