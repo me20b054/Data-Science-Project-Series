@@ -48,6 +48,12 @@ Selcting svm2 model with "linear" kernel is encouraging as it has less false pos
 Recall for 0 is higher in second model
 
 
+
+
+
+
+
+
 Documentation for Stock Market Prediction:
 
 Given dataset consists of 251 days of the year 2022 with 31 records in each day. (31x251 = 7781) 
