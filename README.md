@@ -46,3 +46,22 @@ weighted avg       0.96      0.96      0.96       114
 
 Selcting svm2 model with "linear" kernel is encouraging as it has less false positives compared to svm1 even thoough they are having same accuracy_score
 Recall for 0 is higher in second model
+
+
+Documentation for Stock Market Prediction:
+
+Given dataset consists of 251 days of the year 2022 with 31 records in each day. (31x251 = 7781) 
+All the prices "low","high","open","close" followed the same trend and selected "Closing price" is value to be predicted
+lablencoded the category column "ticker" 
+"date" column has been divided to day,month,year and dropped the year column as it is common for the whole dataset
+Now the final features are
+open	high	low	close	adjclose	volume	ticker    month    day
+
+Scaled all the numerical features
+split in the ratio 0.7:0.3 (train_data:test_data)
+
+Utlised the regression models including linearRegression, RandomForestRegressor, GradientBoostRegressor with the followign MSE results on test_data
+
+LinearRegression  - 0.4194253647496177
+RandomForestRegressor - 1.6607168996246393
+GradientBoostRegressor -1.4227079382621097
